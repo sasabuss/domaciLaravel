@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('tittle')
+@section('title')
 
     Home
 
