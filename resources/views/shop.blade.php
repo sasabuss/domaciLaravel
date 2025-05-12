@@ -8,6 +8,10 @@
 
 @section('sadrzajStranice')
 
-    <p>Ovo je shop stranica</p>
+    @foreach($products as $product)
+        <p>{{$product->name}}</p>
+        
+
+    @endforeach
 
 @endsection

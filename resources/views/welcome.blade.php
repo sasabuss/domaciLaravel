@@ -1,5 +1,6 @@
 @extends('layout')
 
+
 @section('title')
 
     Home
@@ -8,7 +9,16 @@
 
 @section('sadrzajStranice')
 
-    <p>Trenutno vreme je {{date("h:i:sa")}}</p>
+    @if($sat >= 0 && $sat <= 12)
+        <p>Dobro jutro</p>
+     @else
+     
+     <p>Dobar dan</p>
+    
+    @endif
+
+    <p>Trenutno sati {{ $sat}}</p>
+    <p>Trenutno vreme je {{$trenutnoVreme}}</p>
 
 @endsection
 
