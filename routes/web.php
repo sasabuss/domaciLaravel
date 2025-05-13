@@ -15,3 +15,4 @@ Route::get("/",[HomePageController::class,'index']);
 
 
 Route::get("/admin/all-contacts",[ContactController::class,'getAllContacts']);
+Route::post("/send-contact",[ContactController::class,"sendContact"]);
