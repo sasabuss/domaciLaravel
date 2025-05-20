@@ -16,3 +16,6 @@ Route::get("/",[HomePageController::class,'index']);
 
 Route::get("/admin/all-contacts",[ContactController::class,'getAllContacts']);
 Route::post("/send-contact",[ContactController::class,"sendContact"]);
+
+Route::post("/admin/add-product",[ShopController::class,"addProduct"]);
+Route::get("/admin/products",[ShopController::class,"listProducts"]);
