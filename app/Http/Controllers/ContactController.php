@@ -24,7 +24,22 @@ class ContactController extends Controller
             "email" => "required|string",
             "subject" => "required|string",
             "description" => "required|string|min:5",
-            
+
         ]);
+    }
+
+    public function delete($contact)
+    {
+        $singleContact = ContactModel::where(['id'=>$contact])->first();
+
+
+        if($singleContact == null)
+        {
+            die("Kontakt ne postoji");
+        }
+
+        $singleContact->delete();
+
+        return redirect()->back();
     }
 }

@@ -23,7 +23,10 @@
                     <a class="nav-link" href="/contact">Contact</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/admin/products">All Products</a>
+                    <a class="nav-link" href="/admin/all-products">All Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/admin/all-contacts">All Contacts</a>
                 </li>
             </ul>
         </div>

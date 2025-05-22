@@ -18,4 +18,7 @@ Route::get("/admin/all-contacts",[ContactController::class,'getAllContacts']);
 Route::post("/send-contact",[ContactController::class,"sendContact"]);
 
 Route::post("/admin/add-product",[ShopController::class,"addProduct"]);
-Route::get("/admin/products",[ShopController::class,"listProducts"]);
+Route::get("/admin/all-products",[\App\Http\Controllers\ProductsControler::class,"index"]);
+Route::get("admin/delete-product/{product}",[\App\Http\Controllers\ProductsControler::class,"delete"]);
+Route::get("/admin/all-contacts",[ContactController::class,'getAllContacts']);
+Route::get("/admin/delete-contact/{contact}",[ContactController::class,'delete']);
